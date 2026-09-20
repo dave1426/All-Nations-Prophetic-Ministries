@@ -46,7 +46,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
             <!-- Brand Logo & Stacked Title -->
             <a href="#" class="flex items-center gap-2.5 group">
-                <img src="Allnations Logo.jpg" alt="All Nations Logo" class="h-11 w-11 sm:h-12 sm:w-12 rounded-full object-cover border-2 border-ministryGold shadow-md shadow-amber-500/20 group-hover:scale-105 transition">
+                <img src="Allnations Logo.jpg" alt="All Nations Logo" class="h-11 w-11 sm:h-12 sm:w-12 rounded-full object-cover border-2 border-ministryGold shadow-md shadow-amber-500/20 group-hover:scale-105 transition" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=150';">
                 <div class="flex flex-col">
                     <span class="text-xs sm:text-sm font-extrabold tracking-wider uppercase text-white leading-tight">All Nations</span>
                     <span class="text-[10px] sm:text-xs text-purple-300 font-medium tracking-widest uppercase">Prophetic Ministries</span>
@@ -104,8 +104,8 @@
     <!-- Hero Section -->
     <section class="relative min-h-[90vh] flex items-center justify-center pt-28 pb-16 px-6 overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="IMG-20260818-WA0011.jpg" class="slide active w-full h-full object-cover opacity-40">
-            <img src="IMG-20260818-WA0012.jpg" class="slide w-full h-full object-cover opacity-40">
+            <img src="IMG-20260818-WA0011.jpg" class="slide active w-full h-full object-cover opacity-40" onerror="this.style.display='none'">
+            <img src="IMG-20260818-WA0012.jpg" class="slide w-full h-full object-cover opacity-40" onerror="this.style.display='none'">
             <div class="absolute inset-0 bg-gradient-to-b from-ministryNavy/90 via-ministryPurple/40 to-ministryNavy"></div>
         </div>
 
@@ -116,9 +116,9 @@
                 <i class="fa-solid fa-fire"></i> WELCOME TO ALL NATIONS PROPHETIC MINISTRIES
             </span>
             
-            <!-- Professional 2-Line Headline Layout -->
+            <!-- Professional 2-Line Headline Layout without Underline -->
             <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-normal tracking-tight mb-6 leading-tight drop-shadow-lg">
-                Walk in Divine <span class="font-bold italic text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-ministryGold underline decoration-ministryGold/50 decoration-2 underline-offset-8">Prophetic Direction</span>,<br class="hidden sm:inline">
+                Walk in Divine <span class="font-bold italic text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-ministryGold">Prophetic Direction</span>,<br class="hidden sm:inline">
                 <span class="font-bold italic text-transparent bg-clip-text bg-gradient-to-r from-ministryGold via-purple-300 to-white">Grace &amp; Power</span>
             </h1>
 
@@ -161,7 +161,7 @@
     <section id="about" class="py-24 px-6 bg-ministryNavy">
         <div class="max-w-7xl mx-auto space-y-16">
             
-            <!-- WHO WE ARE (Fellowship Focus with Image Card) -->
+            <!-- WHO WE ARE (Fellowship Focus with Image Card & Fallback Gradient) -->
             <div class="grid lg:grid-cols-2 gap-10 items-center bg-gradient-to-br from-purple-950/40 via-ministryNavy to-purple-950/50 p-8 sm:p-12 rounded-3xl border border-purple-800/40 shadow-xl">
                 <div>
                     <span class="text-ministryGold font-semibold text-xs uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Identity</span>
@@ -176,13 +176,18 @@
                         Our Great Commission is to win Souls for Christ and bring them into alignment with the Word of God. Changing the World and transforming lives through moral regeneration through the Holy Spirit and the Word of God.
                     </p>
                 </div>
-                <!-- Fellowship Image Card -->
-                <div class="rounded-3xl overflow-hidden border-2 border-ministryGold/40 shadow-2xl relative group bg-purple-950/60">
-                    <div class="h-80 sm:h-96 overflow-hidden relative">
-                        <img src="IMG-20260818-WA0018.jpg" alt="Christian Fellowship" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-ministryNavy via-ministryNavy/20 to-transparent"></div>
+                <!-- Fellowship Image Card with Styling Fallback -->
+                <div class="rounded-3xl overflow-hidden border-2 border-ministryGold/40 shadow-2xl relative group bg-gradient-to-br from-purple-900 to-ministryNavy">
+                    <div class="h-80 sm:h-96 overflow-hidden relative flex items-center justify-center">
+                        <img src="IMG-20260818-WA0018.jpg" alt="Christian Fellowship" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0" onerror="this.style.opacity='0'">
+                        <!-- Fallback Visual Icon if image is missing -->
+                        <div class="z-0 text-center p-6">
+                            <i class="fa-solid fa-users-church text-5xl text-ministryGold mb-3"></i>
+                            <p class="text-xs text-purple-200 tracking-widest uppercase font-semibold">All Nations Fellowship</p>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ministryNavy via-ministryNavy/30 to-transparent z-1"></div>
                     </div>
-                    <div class="absolute bottom-0 inset-x-0 p-6">
+                    <div class="absolute bottom-0 inset-x-0 p-6 z-10">
                         <span class="bg-ministryGold text-black text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow">Spiritual Fellowship</span>
                         <h4 class="text-lg font-bold text-white mt-2">United in Faith &amp; Fire</h4>
                     </div>
@@ -216,7 +221,7 @@
                 </div>
             </div>
 
-            <!-- OUR MISSION (Mission Outreach Focus with Image Card) -->
+            <!-- OUR MISSION (Mission Outreach Focus with Image Card & Fallback Gradient) -->
             <div class="grid lg:grid-cols-2 gap-10 items-center bg-gradient-to-br from-ministryNavy via-purple-950/30 to-ministryNavy p-8 sm:p-12 rounded-3xl border border-purple-800/40 shadow-xl">
                 <div>
                     <span class="text-ministryGold font-semibold text-xs uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Mandate</span>
@@ -229,13 +234,18 @@
                         <span class="block mt-2 font-bold not-italic text-ministryGold text-xs">Matthew 28:18-20</span>
                     </blockquote>
                 </div>
-                <!-- Mission Outreach Image Card -->
-                <div class="rounded-3xl overflow-hidden border-2 border-ministryGold/40 shadow-2xl relative group bg-purple-950/60">
-                    <div class="h-80 sm:h-96 overflow-hidden relative">
-                        <img src="IMG-20260818-WA0014.jpg" alt="Mission Outreach" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-ministryNavy via-ministryNavy/20 to-transparent"></div>
+                <!-- Mission Outreach Image Card with Styling Fallback -->
+                <div class="rounded-3xl overflow-hidden border-2 border-ministryGold/40 shadow-2xl relative group bg-gradient-to-br from-purple-900 to-ministryNavy">
+                    <div class="h-80 sm:h-96 overflow-hidden relative flex items-center justify-center">
+                        <img src="IMG-20260818-WA0014.jpg" alt="Mission Outreach" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0" onerror="this.style.opacity='0'">
+                        <!-- Fallback Visual Icon if image is missing -->
+                        <div class="z-0 text-center p-6">
+                            <i class="fa-solid fa-globe text-5xl text-ministryGold mb-3"></i>
+                            <p class="text-xs text-purple-200 tracking-widest uppercase font-semibold">Global Outreach</p>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ministryNavy via-ministryNavy/30 to-transparent z-1"></div>
                     </div>
-                    <div class="absolute bottom-0 inset-x-0 p-6">
+                    <div class="absolute bottom-0 inset-x-0 p-6 z-10">
                         <span class="bg-ministryGold text-black text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow">Global &amp; Local Outreach</span>
                         <h4 class="text-lg font-bold text-white mt-2">Preaching to All Nations</h4>
                     </div>
@@ -544,7 +554,7 @@
             <!-- Col 1: Brand Info -->
             <div class="space-y-4">
                 <div class="flex items-center gap-2.5">
-                    <img src="Allnations Logo.jpg" alt="All Nations Logo" class="h-10 w-10 rounded-full object-cover border-2 border-ministryGold shadow-md">
+                    <img src="Allnations Logo.jpg" alt="All Nations Logo" class="h-10 w-10 rounded-full object-cover border-2 border-ministryGold shadow-md" onerror="this.style.display='none'">
                     <div class="flex flex-col">
                         <span class="text-sm font-extrabold tracking-wider uppercase text-white leading-tight">All Nations</span>
                         <span class="text-[10px] text-purple-300 font-medium tracking-widest uppercase">Prophetic Ministries</span>
