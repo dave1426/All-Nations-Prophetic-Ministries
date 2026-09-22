@@ -101,15 +101,17 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Brighter Purple Light Beam Background -->
     <section class="relative min-h-[90vh] flex items-center justify-center pt-28 pb-16 px-6 overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="IMG-20260818-WA0011.jpg" class="slide active w-full h-full object-cover opacity-40" onerror="this.style.display='none'">
             <img src="IMG-20260818-WA0012.jpg" class="slide w-full h-full object-cover opacity-40" onerror="this.style.display='none'">
-            <div class="absolute inset-0 bg-gradient-to-b from-ministryNavy/90 via-ministryPurple/40 to-ministryNavy"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-ministryNavy/80 via-ministryPurple/60 to-ministryNavy"></div>
         </div>
 
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-600/25 rounded-full blur-3xl pointer-events-none z-1"></div>
+        <!-- Brighter Purple/Gold Light Beam Glow Effect -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30rem] h-[30rem] bg-purple-500/40 rounded-full blur-[100px] pointer-events-none z-1"></div>
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-amber-500/20 rounded-full blur-[90px] pointer-events-none z-1"></div>
 
         <div class="max-w-4xl mx-auto text-center relative z-10">
             <span class="inline-flex items-center gap-2 bg-ministryGold/20 border border-ministryGold/40 text-ministryGold px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md shadow-lg shadow-amber-500/10">
@@ -161,7 +163,7 @@
     <section id="about" class="py-24 px-6 bg-ministryNavy">
         <div class="max-w-7xl mx-auto space-y-16">
             
-            <!-- WHO WE ARE (Fellowship Focus with Image Card & Fallback Gradient) -->
+            <!-- WHO WE ARE (Replaced with "3 crosses at calvary.jpg") -->
             <div class="grid lg:grid-cols-2 gap-10 items-center bg-gradient-to-br from-purple-950/40 via-ministryNavy to-purple-950/50 p-8 sm:p-12 rounded-3xl border border-purple-800/40 shadow-xl">
                 <div>
                     <span class="text-ministryGold font-semibold text-xs uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Identity</span>
@@ -176,52 +178,60 @@
                         Our Great Commission is to win Souls for Christ and bring them into alignment with the Word of God. Changing the World and transforming lives through moral regeneration through the Holy Spirit and the Word of God.
                     </p>
                 </div>
-                <!-- Fellowship Image Card with Styling Fallback -->
+                <!-- 3 Crosses at Calvary Image Card -->
                 <div class="rounded-3xl overflow-hidden border-2 border-ministryGold/40 shadow-2xl relative group bg-gradient-to-br from-purple-900 to-ministryNavy">
                     <div class="h-80 sm:h-96 overflow-hidden relative flex items-center justify-center">
-                        <img src="IMG-20260818-WA0018.jpg" alt="Christian Fellowship" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0" onerror="this.style.opacity='0'">
-                        <!-- Fallback Visual Icon if image is missing -->
+                        <img src="3 crosses at calvary.jpg" alt="3 Crosses at Calvary" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0" onerror="this.style.opacity='0'">
                         <div class="z-0 text-center p-6">
-                            <i class="fa-solid fa-users-church text-5xl text-ministryGold mb-3"></i>
-                            <p class="text-xs text-purple-200 tracking-widest uppercase font-semibold">All Nations Fellowship</p>
+                            <i class="fa-solid fa-cross text-5xl text-ministryGold mb-3"></i>
+                            <p class="text-xs text-purple-200 tracking-widest uppercase font-semibold">3 Crosses at Calvary</p>
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-ministryNavy via-ministryNavy/30 to-transparent z-1"></div>
                     </div>
                     <div class="absolute bottom-0 inset-x-0 p-6 z-10">
-                        <span class="bg-ministryGold text-black text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow">Spiritual Fellowship</span>
-                        <h4 class="text-lg font-bold text-white mt-2">United in Faith &amp; Fire</h4>
+                        <span class="bg-ministryGold text-black text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow">Cross of Calvary</span>
+                        <h4 class="text-lg font-bold text-white mt-2">Redemption &amp; Grace</h4>
                     </div>
                 </div>
             </div>
 
-            <!-- OUR VISION -->
-            <div class="bg-gradient-to-r from-purple-950/50 via-purple-900/30 to-ministryNavy p-8 sm:p-12 rounded-3xl border border-purple-700/50 shadow-xl relative overflow-hidden">
-                <span class="text-ministryGold font-semibold text-xs uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Direction</span>
-                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mt-3 mb-4">Our Vision</h2>
-                <p class="text-gray-200 text-base sm:text-lg leading-relaxed font-light mb-6">
-                    We are an Antioch type of Church that is led by the Holy Spirit. We believe in Jesus Christ as our Lord and Saviour; and the Holy Bible as the authentic Word of God.
-                </p>
-                <div class="grid sm:grid-cols-2 gap-4 text-sm text-gray-300">
-                    <div class="bg-ministryNavy/60 p-4 rounded-xl border border-purple-800/40 flex items-start gap-3">
-                        <i class="fa-solid fa-circle-check text-ministryGold mt-1"></i>
-                        <span>Win souls for Jesus Christ and disciple individuals.</span>
+            <!-- OUR VISION (Replaced with "IMG-20260920-WA7786.jpg") -->
+            <div class="grid lg:grid-cols-2 gap-10 items-center bg-gradient-to-r from-purple-950/50 via-purple-900/30 to-ministryNavy p-8 sm:p-12 rounded-3xl border border-purple-700/50 shadow-xl relative overflow-hidden">
+                <div>
+                    <span class="text-ministryGold font-semibold text-xs uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Direction</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mt-3 mb-4">Our Vision</h2>
+                    <p class="text-gray-200 text-base sm:text-lg leading-relaxed font-light mb-6">
+                        We are an Antioch type of Church that is led by the Holy Spirit. We believe in Jesus Christ as our Lord and Saviour; and the Holy Bible as the authentic Word of God.
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-4 text-sm text-gray-300">
+                        <div class="bg-ministryNavy/60 p-4 rounded-xl border border-purple-800/40 flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-ministryGold mt-1"></i>
+                            <span>Win souls for Jesus Christ and disciple individuals.</span>
+                        </div>
+                        <div class="bg-ministryNavy/60 p-4 rounded-xl border border-purple-800/40 flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-ministryGold mt-1"></i>
+                            <span>Reach communities and cities by raising believers into disciples that mature into Ministers.</span>
+                        </div>
                     </div>
-                    <div class="bg-ministryNavy/60 p-4 rounded-xl border border-purple-800/40 flex items-start gap-3">
-                        <i class="fa-solid fa-circle-check text-ministryGold mt-1"></i>
-                        <span>Reach communities and cities by raising believers into disciples that mature into Ministers and seed churches.</span>
+                </div>
+                <!-- Vision Image Card with IMG-20260920-WA7786.jpg -->
+                <div class="rounded-3xl overflow-hidden border-2 border-ministryGold/40 shadow-2xl relative group bg-gradient-to-br from-purple-900 to-ministryNavy">
+                    <div class="h-80 sm:h-96 overflow-hidden relative flex items-center justify-center">
+                        <img src="IMG-20260920-WA7786.jpg" alt="Ministry Vision" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0" onerror="this.style.opacity='0'">
+                        <div class="z-0 text-center p-6">
+                            <i class="fa-solid fa-eye text-5xl text-ministryGold mb-3"></i>
+                            <p class="text-xs text-purple-200 tracking-widest uppercase font-semibold">Divine Vision</p>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ministryNavy via-ministryNavy/30 to-transparent z-1"></div>
                     </div>
-                    <div class="bg-ministryNavy/60 p-4 rounded-xl border border-purple-800/40 flex items-start gap-3">
-                        <i class="fa-solid fa-circle-check text-ministryGold mt-1"></i>
-                        <span>Send out ministers to support ministries by touching lost souls with a moral message of the cross.</span>
-                    </div>
-                    <div class="bg-ministryNavy/60 p-4 rounded-xl border border-purple-800/40 flex items-start gap-3">
-                        <i class="fa-solid fa-circle-check text-ministryGold mt-1"></i>
-                        <span>Display the Love of God by assisting the poor, less privileged and the homeless.</span>
+                    <div class="absolute bottom-0 inset-x-0 p-6 z-10">
+                        <span class="bg-ministryGold text-black text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow">Antioch Mandate</span>
+                        <h4 class="text-lg font-bold text-white mt-2">Led by the Holy Spirit</h4>
                     </div>
                 </div>
             </div>
 
-            <!-- OUR MISSION (Mission Outreach Focus with Image Card & Fallback Gradient) -->
+            <!-- OUR MISSION (Mission Outreach Focus with Image Card) -->
             <div class="grid lg:grid-cols-2 gap-10 items-center bg-gradient-to-br from-ministryNavy via-purple-950/30 to-ministryNavy p-8 sm:p-12 rounded-3xl border border-purple-800/40 shadow-xl">
                 <div>
                     <span class="text-ministryGold font-semibold text-xs uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Mandate</span>
@@ -230,15 +240,14 @@
                         The Lord gave us a commission to win Souls for Him and to preach Jesus Christ the resurrected Saviour to all nations and all nationalities.
                     </p>
                     <blockquote class="bg-purple-950/60 p-5 rounded-2xl border-l-4 border-ministryGold italic text-gray-200 text-xs sm:text-sm leading-relaxed shadow-inner">
-                        “And Jesus came to them and spoke unto them, saying. All authority hath been given unto me in heaven and on earth. Go ye therefore, and make disciples of all the nations, baptizing them into the name of the Father and of the Son and of the Holy Spirit: teaching them to observe all things whatsoever I commanded you: and lo, I am with you always, even unto the end of the world.”
+                        “And Jesus came to them and spoke unto them, saying. All authority hath been given unto me in heaven and on earth. Go ye therefore, and make disciples of all the nations...”
                         <span class="block mt-2 font-bold not-italic text-ministryGold text-xs">Matthew 28:18-20</span>
                     </blockquote>
                 </div>
-                <!-- Mission Outreach Image Card with Styling Fallback -->
+                <!-- Mission Outreach Image Card -->
                 <div class="rounded-3xl overflow-hidden border-2 border-ministryGold/40 shadow-2xl relative group bg-gradient-to-br from-purple-900 to-ministryNavy">
                     <div class="h-80 sm:h-96 overflow-hidden relative flex items-center justify-center">
                         <img src="IMG-20260818-WA0014.jpg" alt="Mission Outreach" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0" onerror="this.style.opacity='0'">
-                        <!-- Fallback Visual Icon if image is missing -->
                         <div class="z-0 text-center p-6">
                             <i class="fa-solid fa-globe text-5xl text-ministryGold mb-3"></i>
                             <p class="text-xs text-purple-200 tracking-widest uppercase font-semibold">Global Outreach</p>
